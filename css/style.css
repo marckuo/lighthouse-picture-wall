@@ -1,6 +1,19 @@
 body {
   font-family: Verdana;
-  font-size: 1.5em; }
+  font-size: 1em; }
+
+h1 {
+  color: black;
+  font-family: Lato;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700; }
+
+h2 {
+  font-family: Lato;
+  color: #ef4f43;
+  text-align: center;
+  font-size: 2em; }
 
 #team-members {
   clear: both; }
@@ -9,13 +22,27 @@ body {
   float: left;
   /*border: 1px solid gray;*/
   margin: 10px;
-  padding: 6px; }
+  padding: 6px;
+  background: repeating-linear-gradient(-45deg, #ef4f43, #ef4f43 5px, white 5px, white 10px);
+  border-radius: 10% 10% 10% 10%; }
 
 #team-members .member img {
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  opacity: 0.4;
+  border-radius: 10% 10% 10% 10%; }
+
+#team-members .member img:hover {
+  opacity: 1;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transition: 0.8s; }
 
 #team-members .member div.name {
-  text-align: center; }
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Satisfy, cursive;
+  font-style: bold;
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */
